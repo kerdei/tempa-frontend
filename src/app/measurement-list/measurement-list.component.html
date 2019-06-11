@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Username</th>
+          <th scope="col">Date</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let measurement of measurements">
+          <td>{{ measurement.meterID }}</td>
+          <td>{{ measurement.userName }}</td>
+          <td>{{ measurement.date }}</td>
+          <td>{{ measurement.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
