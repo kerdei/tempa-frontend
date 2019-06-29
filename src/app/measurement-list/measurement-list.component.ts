@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Measurement } from '../measurement';
 import { MeasurementService } from 'service/measurement-service.service';
-import { Chart } from 'chart.js';
 
 
 @Component({
@@ -11,12 +10,12 @@ import { Chart } from 'chart.js';
 })
 export class MeasurementListComponent implements OnInit {
 
-  chart: [];
+
   measurements: Measurement[];
- 
+
   constructor(private measurementService: MeasurementService) {
   }
- 
+
   ngOnInit() {
     this.measurementService.findAll().subscribe(data => {
       this.measurements = data;

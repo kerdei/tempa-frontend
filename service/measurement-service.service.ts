@@ -10,7 +10,8 @@ export class MeasurementService {
   private measurementsUrl: string;
  
   constructor(private http: HttpClient) {
-    this.measurementsUrl = 'http://localhost:8080/measurements';
+        this.measurementsUrl = 'https://tempa-backend.cfapps.io/measurements/kerdei/yesterday';
+//      this.measurementsUrl = 'http://localhost:8080/measurements/kerdei/yesterday';
   }
  
   public findAll(): Observable<Measurement[]> {

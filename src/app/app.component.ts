@@ -11,5 +11,7 @@ export class AppComponent {
  
   constructor() {
     this.title = 'Tempa';
-  }Ł
+  }
+
+  
 }

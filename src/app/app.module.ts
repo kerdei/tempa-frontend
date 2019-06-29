@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MeasurementListComponent} from  './measurement-list/measurement-list.component';
 import { MeasurementService } from 'service/measurement-service.service';
+import { ChartComponent } from './chart/chart.component';
 
  
 @NgModule({
   declarations: [
     AppComponent,
-    MeasurementListComponent
+    MeasurementListComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

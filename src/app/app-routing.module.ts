@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MeasurementListComponent } from './measurement-list/measurement-list.component';
+import { ChartComponent } from './chart/chart.component';
 
 const routes: Routes = [
-  { path: 'measurements', component: MeasurementListComponent }
+  { path: 'measurements', component: MeasurementListComponent,
+  },
+  { path: 'chart', component: ChartComponent,
+  },
 ];
  
 @NgModule({
